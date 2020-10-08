@@ -1,7 +1,16 @@
 
 <div class="logo">
   <h1>Choose you cocktail</h1>
+
+  <%= image_tag "logo.png" %>
+
+  <% @cocktails.each do |cocktail| %>
+    <%= link_to cocktail_path(cocktail.id) do %>
+      <i class="fa fa-plus"></i> <%= cocktail.name %>
+    <% end %>
+  <% end %>
+
+  <%= link_to new_cocktail_path do %>
+    <i class="fa fa-plus"></i> Add a new cocktail
+  <% end %>
 </div>
-<% @cocktails.each do |cocktail| %>
-  <%= cocktail.name %>
-<% end %>

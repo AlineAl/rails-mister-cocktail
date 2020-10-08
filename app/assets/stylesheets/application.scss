@@ -11,6 +11,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "cocktails/index";
 
 body {
     background-image: asset-url("thumb-1920-84199.jpg");
@@ -19,9 +20,3 @@ body {
     font-weight: bold;
 }
 
-.logo {
-    background-image: asset-url("logo.png");
-    text-align: center;
-    weight: 250px;
-    height: 250px;
-}
