@@ -1,16 +1,17 @@
+<div class="banner">
+  <h1>Choose you cocktail</h1><br>
+  <p><%= link_to new_cocktail_path do %>
+    <i class="fa fa-plus"></i> Create your cocktail
+  <% end %></p>
+  <span class="image"><%= image_tag "logo.png", size: "300" %></span> 
+</div>
 
-<div class="logo">
-  <h1>Choose you cocktail</h1>
-
-  <%= image_tag "logo.png" %>
-
-  <% @cocktails.each do |cocktail| %>
-    <%= link_to cocktail_path(cocktail.id) do %>
+<div class="cards">
+    <% @cocktails.each do |cocktail| %>
+    <%= cocktail.name %>
+    <%= link_to cocktail_path(cocktail) do %>
       <i class="fa fa-plus"></i> <%= cocktail.name %>
     <% end %>
   <% end %>
-
-  <%= link_to new_cocktail_path do %>
-    <i class="fa fa-plus"></i> Add a new cocktail
-  <% end %>
 </div>
+  

@@ -1,4 +1,27 @@
-image_tag {
-    height: 200px;
-    width: 200px;
+.banner {
+    background-image: asset-url("thumb-1920-84199.jpg"), linear-gradient(transparent, white 75%);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.image {
+    display: flex;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 4px 4px 17px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    margin-left: 46px;
+    margin-right: 46px;
+    height: 276px;
+    margin-top: 25px;
 }
